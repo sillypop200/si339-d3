@@ -103,9 +103,9 @@ def csv_to_html(csv_filename, output_folder):
     <figcaption>{name}</figcaption>
 </figure>
 <dl>
-    <dt>Place</dt><dd>{place}</dd>
-    <dt>Time</dt><dd>{time}</dd>
-    <dt>Grade</dt><dd>{grade}</dd>
+    <dt>Place</dt><dd> {place}</dd>
+    <dt>Time</dt><dd> {time}</dd>
+    <dt>Grade</dt><dd> {grade}</dd>
 </dl>
 </div>
 """

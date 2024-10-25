@@ -121,7 +121,7 @@ div.athlete:hover {
     margin: 15px 40px 0;
     padding: 0;
     display:grid; 
-    grid-template-columns: auto auto;
+    grid-template-columns: 10vh auto;
     grid-template-rows: repeat(3,auto);
 }
 

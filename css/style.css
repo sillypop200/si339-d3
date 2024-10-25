@@ -112,6 +112,7 @@ div.athlete:hover {
     font-size: 1.2em;
     margin-top: 10px;
     font-weight: bold;
+    text-align: center;
     color: white;
 }
 

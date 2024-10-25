@@ -1,0 +1,260 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover{
+    font-weight: bold;
+    color: #930620;
+}
+h1, h2{
+    text-align: center;
+    color:#143109;
+}
+#meettitle:hover{
+    animation:
+        jump-out 5s ease 0.2s forwards;
+}
+#meetdate{
+    overflow: hidden;
+    margin: 0 auto;
+    white-space: nowrap;
+    animation: 
+        typing 9.0s steps(60,end);
+}
+@keyframes typing {
+    from {width:0} to {width:100%}
+}
+img{
+    width: 250px;
+    height: 250px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+    display: block;
+    margin: 0 auto;
+}
+#skip{
+    position:fixed;
+    top:-40px;
+    left: 0;
+    padding: 8px;
+    z-index: 100;
+}
+
+#skip:focus{
+    top:10px;
+}
+ nav {
+    background-color: #e9d2f8;
+    display: flex;
+    flex-direction: column; /* Stack links vertically for mobile */
+    padding: 7px;
+    text-align: center;
+}
+table{
+    margin:auto;
+}
+table, td, tr, th{
+    text-align: center;
+    border: 1px solid black; 
+    border-collapse:collapse; 
+}
+th, td{
+    padding:15px;
+}
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: #e9d2f8;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+nav a:hover {
+    color: rgb(69, 6, 100);
+    text-decoration:underline;
+}
+
+td a{
+    text-decoration: none;
+}
+#summary p{
+    color: #220C10;
+    text-align: center;
+}
+div.athlete {
+    background-color: #143109; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    /* width: 250px;  */
+    display:inline-block;
+    text-align: center; 
+    margin: 10px auto; 
+}
+.athlete figure {
+    margin: 0;
+    padding: 0;
+}
+
+.athlete figcaption {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Styling for the definition list (dl, dt, dd) */
+.athlete dl {
+    margin: 15px 0 0;
+    padding: 0;
+}
+
+.athlete dt {
+    font-weight: bold;
+    color: white;
+}
+
+.athlete dd {
+    margin: 0 0 10px;
+    color: white;
+    font-size: 1em;
+}
+
+.homepage{
+    text-decoration: none;
+}
+.homelist{
+    list-style: none; 
+}
+header {
+    position: relative; 
+    color: white; 
+    padding: 100px 20px;
+    text-align: center;
+    height: 40vh; 
+    z-index: 1; 
+}
+header h1 a {
+    text-decoration: none;
+    color:#143109;
+}
+.summary{
+    padding:2%;
+    padding-right:5%;
+}
+
+.summary p{
+    background-color: #d3f8d296;
+    padding: 15px;   
+}
+.summary p:first-of-type{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.summary p:last-of-type{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+header h1 a:hover, header h1 a:focus{
+    color:rgb(184, 11, 11);
+    text-decoration:underline;
+}
+
+header::before {
+    content: ""; /* Pseudo-element needs content */
+    background-image: url('../forestSI.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire header area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeating the image */
+    
+    position: absolute; /* Position the pseudo-element */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25; /* Adjust opacity of the background image */
+    z-index: -1; /* Ensure the background is behind the content */
+}
+
+h1, h2 {
+    position: relative; /* Keep the text on top of the background image */
+    z-index: 1; /* Ensure text is above the background */
+}
+footer {
+    background-color: #e9d2f8; /* Dark green background */
+    color: 143109; /* White text for contrast */
+    padding: 20px; /* Adds padding inside the footer */
+    text-align: center; /* Centers the content */
+    font-family: Arial, sans-serif; /* Font for a clean look */
+    border-top: 5px solid #143109; /* Optional: Adds a top border to separate it */
+}
+
+footer p {
+    margin: 0; /* Removes extra margin on the <p> tag */
+    font-size: 1em; /* Ensures readable text size */
+    line-height: 1.5; /* Adds breathing space between lines */
+}
+
+footer address {
+    font-style: normal; /* Prevents italicized address (optional) */
+    margin-bottom: 10px; /* Adds spacing below the address */
+}
+
+footer a {
+    color: #143109; /* Light purple color for the links */
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold; /* Makes the link text bold */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adds underline on hover for clarity */
+}
+
+footer a i {
+    color: #143109; /* Instagram icon color */
+    font-size: 1.2em; /* Slightly larger icon size */
+}
+
+footer a i:hover {
+    color: #fff; /* Change icon color on hover */
+}
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row; /* Arrange links horizontally for larger screens */
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        padding: 10px 20px;
+    }
+
+}
+
+
+tr:nth-child(even) {
+    background-color: #ffe5ec; /* Blanched Almond for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #d7e3fc; /* Light Sky Blue for odd rows */
+}
+tr:first-child{
+    background-color: #fffff6;
+}
+
+@keyframes jump-out {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2);
+	}
+}

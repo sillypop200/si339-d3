@@ -5,7 +5,8 @@ import re
 meets_folder = 'meets'
 output_file = 'index.html'
 
-# Ensure the folder exists
+
+
 if not os.path.exists(meets_folder):
     print(f"The folder '{meets_folder}' does not exist.")
 else:

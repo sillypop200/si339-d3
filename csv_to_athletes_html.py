@@ -61,7 +61,7 @@ def gen_athlete_page(data, outfile):
    <body>
    <a href = "#main" id = "skip">Skip to Main Content</a>
    <nav>
-        <a href="index.html">Home Page</a>
+        <a href="../index.html">Home Page</a>
         <a href="mens.html">Men's Team</a>
         <a href="womens.html">Women's Team</a>
    </nav>
@@ -134,9 +134,6 @@ def gen_athlete_page(data, outfile):
 
                         </table>
                      </section>
-                     <section id = "gallery">
-                     <h2>Gallery</h2>
-                      </section>
                      </main>
                      <footer>
                      <p>

@@ -109,6 +109,9 @@ div.athlete {
 .athlete dl {
     margin: 15px 0 0;
     padding: 0;
+    display:grid; 
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3,auto);
 }
 
 .athlete dt {

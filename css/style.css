@@ -463,3 +463,14 @@ th {
     font-size: 1.5em;
     color: #cd7f32;
 }
+
+#gallery  {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between the images */
+    grid-template-rows: auto;
+}
+
+#gallery img{
+    border-radius:0%; 
+} 

@@ -95,7 +95,6 @@ div.athlete {
     justify-content: center;
     flex-wrap:wrap; 
     margin: 5px;
-    
 }
 
 div.athlete:hover {
@@ -109,6 +108,8 @@ div.athlete:hover {
 .athlete figure {
     margin: 0;
     padding: 0;
+    opacity: 0; /* Start transparent */
+    animation: fadeIn 1s ease forwards; /* Trigger the animation */
 }
 
 .athlete figcaption {
@@ -289,4 +290,39 @@ th {
     background-color: #fffff6; /* Set a background color so it stands out */
     z-index: 1; /* Ensure it stays on top of other rows */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for emphasis */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: Add a slight upward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    /* Disable or simplify animations */
+    #meettitle:hover,
+    div.athlete:hover {
+        animation: none; /* Disable animations on hover */
+    }
+
+    /* Disable typing animation for the date */
+    #meetdate {
+        animation: none;
+    }
+
+    /* Remove fade-in effect on athlete figure */
+    .athlete figure {
+        animation: none;
+        opacity: 1; /* Set opacity to 1 to show content without animation */
+    }
+
+    /* Disable border animation on hover */
+    div.athlete:hover {
+        border-left: 2px solid #ecf5f2fd; /* Set static border */
+    }
 }

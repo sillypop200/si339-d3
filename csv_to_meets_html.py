@@ -37,7 +37,7 @@ def csv_to_html(csv_filename, output_folder):
 <link rel="stylesheet" href="../css/style.css">
 </head>
    <body>
-   <a href = "#main" id ="skip">Skip to Main Content</a>
+   <a href="#main" id="skip">Skip to Main Content</a>
    <nav>
         <a href="../index.html">Home Page</a>
         <a href="#summary">Summary</a>
@@ -47,11 +47,11 @@ def csv_to_html(csv_filename, output_folder):
    </nav>
    <header>
       <!--Meet Info -->
-        <h1 id = "meettitle"><a href="{link_url}">{link_text}</a></h1>
-        <h2 id = "meetdate">{h2_text}</h2>
+        <h1 id="meettitle"><a href="{link_url}">{link_text}</a></h1>
+        <h2 id="meetdate">{h2_text}</h2>
 </header>
-   <main id = "main">
-    <section class="summary" id = "summary">
+   <main id="main">
+    <section class="summary" id="summary">
       <h2>Race Summary</h2>
       {summary_text}
     </section>
@@ -99,7 +99,7 @@ def csv_to_html(csv_filename, output_folder):
 <div class="athlete" id="{athlete_id}">
 <figure> 
     <img src="../images/profiles/{profile_pic}" width="200" alt="Profile picture of {name}"
-    onerror="this.onerror=null;this.src='../../images/default_image.jpg';"> 
+    onerror="this.onerror=null;this.src='../images/default_image.jpg';"> 
     <figcaption>{name}</figcaption>
 </figure>
 <dl>
@@ -136,8 +136,8 @@ def csv_to_html(csv_filename, output_folder):
                      2552 North Maple Road<br>
                      Ann Arbor, MI 48103<br><br>
                     </address>
-                     <a href = "https://sites.google.com/aaps.k12.mi.us/skylinecrosscountry2021/home">XC Skyline Page</a><br>
-                    Follow us on Instagram <a href = "https://www.instagram.com/a2skylinexc/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a> 
+                     <a href="https://sites.google.com/aaps.k12.mi.us/skylinecrosscountry2021/home">XC Skyline Page</a><br>
+                    Follow us on Instagram <a href="https://www.instagram.com/a2skylinexc/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a> 
                      </footer>
         </body>
 </html>

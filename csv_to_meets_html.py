@@ -71,7 +71,18 @@ def csv_to_html(csv_filename, output_folder):
                 if row[0] == "Place":
                     html_content += f"<tr><th>{row[0]}</th><th>{row[1]}</th><th>{row[2]}</th></tr>\n"
                 else:
-                    html_content += f"<tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td></tr>\n"
+                  # Replace place 1, 2, and 3 with the appropriate classes
+                    place = int(row[0])
+                    if place == 1:
+                        place_html = '<td class="first-place"></td>'
+                    elif place == 2:
+                        place_html = '<td class="second-place"></td>'
+                    elif place == 3:
+                        place_html = '<td class="third-place"></td>'
+                    else:
+                        place_html = f'<td>{row[0]}</td>'
+
+                    html_content += f"<tr>{place_html}<td>{row[1]}</td><td>{row[2]}</td></tr>\n"
 
             # For rows that are 8 columns wide and contain 'Ann Arbor Skyline' in column 6
             elif len(row) == 8 and row[5].strip().lower() == 'ann arbor skyline':

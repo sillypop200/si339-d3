@@ -326,3 +326,140 @@ th {
         border-left: 2px solid #ecf5f2fd; /* Set static border */
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    /* General Text and Background */
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+    
+    h1, h2 {
+        color: #d1f5dc; /* Light green text for titles */
+    }
+    #meettitle a{
+        color: #d1f5dc; 
+    }
+    /* Links */
+    a:hover {
+        color: #ff726f;
+    }
+
+    nav {
+        background-color: #333; /* Darker background for navigation */
+    }
+
+    nav a {
+        color: #d1f5dc; /* Light text color for readability */
+        background-color: #444; /* Dark background for nav links */
+    }
+
+    nav a:hover {
+        color: #ffa726;
+        text-decoration: underline;
+    }
+
+    /* Athlete Cards */
+    div.athlete {
+        background-color: #0c1e05; /* Darker background for athlete cards */
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    }
+
+    div.athlete:hover {
+        border-left: 5px solid #f57c00;
+        box-shadow: 0 14px 28px rgba(255, 255, 255, 0.15), 0 10px 10px rgba(255, 255, 255, 0.12);
+    }
+
+    .athlete figcaption, .athlete dt, .athlete dd {
+        color: #f5f5f5;
+    }
+
+    /* Table */
+    table, td, tr, th {
+        color: #e0e0e0;
+        border: 1px solid #444;
+    }
+
+    tr:nth-child(even) {
+        background-color: #2e2e2e;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #3e3e3e;
+    }
+
+    tr:first-child {
+        background-color: #444;
+    }
+
+    th {
+        background-color: #333;
+        color: #e0e0e0;
+        box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
+    }
+
+    /* Footer */
+    footer {
+        background-color: #1f1f1f;
+        color: #d1f5dc;
+        border-top: 5px solid #333;
+    }
+
+    footer a {
+        color: #d1f5dc;
+    }
+
+    footer a:hover {
+        color: #ff7043;
+    }
+
+    footer a i {
+        color: #d1f5dc;
+    }
+
+    footer a i:hover {
+        color: #ff7043;
+    }
+
+    /* Header Background Image */
+    header::before {
+        background-image: url('../forestSI_dark.jpg'); /* Optional dark-mode background image */
+        opacity: 0.5;
+    }
+
+    /* Summary Section */
+    .summary p {
+        background-color: rgb(102, 0, 17); /* Darker background for summary text */
+        color: white!important;
+    }
+    /* Button Focus */
+    #skip:focus {
+        background-color: #300000;
+        color: white;
+        font-weight:bold;
+    }
+    body a {
+        color:white;
+    }
+}
+
+/* First place icon */
+.first-place::before {
+    content: "\1F947"; /* 🥇 Gold Medal */
+    font-size: 1.5em;
+    color: gold;
+}
+
+/* Second place icon */
+.second-place::before {
+    content: "\1F948"; /* 🥈 Silver Medal */
+    font-size: 1.5em;
+    color: silver;
+}
+
+/* Third place icon */
+.third-place::before {
+    content: "\1F949"; /* 🥉 Bronze Medal */
+    font-size: 1.5em;
+    color: #cd7f32;
+}

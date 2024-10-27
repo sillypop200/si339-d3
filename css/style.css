@@ -304,6 +304,13 @@ th {
 }
 
 @media (prefers-reduced-motion: reduce) {
+    .homelist li {
+        transition: none; /* Disable transition */
+      }
+    
+      .homelist li:hover {
+        transform: none; /* Remove scale effect */
+      }
     /* Disable or simplify animations */
     #meettitle:hover,
     div.athlete:hover {
@@ -328,10 +335,22 @@ th {
 }
 
 @media (prefers-color-scheme: dark) {
+    .homelist li {
+        background-color: #1e1e1e;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+    
+      .homelist a {
+        color: #bb86fc;
+      }
+    
+      .homelist a:hover {
+        color: #9b66e8;
+      }
     /* General Text and Background */
     body {
         background-color: #121212;
-        color: #e0e0e0;
+        color: #e0e0e0a2;
     }
     
     h1, h2 {

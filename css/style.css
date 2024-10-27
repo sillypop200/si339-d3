@@ -474,3 +474,44 @@ th {
 #gallery img{
     border-radius:0%; 
 } 
+
+
+
+
+.homelist {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .homelist li {
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .homelist li:hover {
+    transform: scale(1.02);
+  }
+  
+  .homelist a {
+    display: block;
+    padding: 15px 20px;
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .homelist a:hover {
+    color: #005fa3;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+  }

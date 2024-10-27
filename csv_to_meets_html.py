@@ -214,6 +214,7 @@ def create_meet_image_gallery(url):
     meet_id = extract_meet_id(url)
     # Define the folder path for images based on the meet ID
     folder_path = f'images/{meet_id}/'
+    print(meet_id)
     
     if not os.path.exists(folder_path):
         return ""

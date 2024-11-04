@@ -6,10 +6,6 @@ a:hover{
     font-weight: bold;
     color: #930620;
 }
-h1, h2{
-    text-align: center;
-    color:#143109;
-}
 #meettitle:hover{
     animation:
         jump-out 5s ease 0.2s forwards;
@@ -34,15 +30,7 @@ img{
     margin: 0 auto;
 }
 #skip{
-    position:fixed;
-    top:-40px;
-    left: 0;
-    padding: 8px;
-    z-index: 100;
-}
-
-#skip:focus{
-    top:10px;
+    color:black;
 }
 tr:hover{
     opacity:70%; 
@@ -199,13 +187,14 @@ header::before {
 h1, h2 {
     position: relative; /* Keep the text on top of the background image */
     z-index: 1; /* Ensure text is above the background */
+    text-align: center;
+    color:#143109;
 }
 footer {
     background-color: #e9d2f8; /* Dark green background */
     color: 143109; /* White text for contrast */
     padding: 20px; /* Adds padding inside the footer */
     text-align: center; /* Centers the content */
-    font-family: Arial, sans-serif; /* Font for a clean look */
     border-top: 5px solid #143109; /* Optional: Adds a top border to separate it */
 }
 
@@ -238,19 +227,6 @@ footer a i {
 footer a i:hover {
     color: #fff; /* Change icon color on hover */
 }
-
-/* @media (min-width: 768px) {
-    nav {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    nav a {
-        padding: 10px 20px;
-    }
-
-} */
-
 
 tr:nth-child(even) {
     background-color: #ffe5ec; /* Blanched Almond for even rows */
@@ -494,9 +470,6 @@ th {
     border-radius:0%; 
 } 
 
-
-
-
 .homelist {
     list-style: none;
     max-width: 800px;
@@ -504,13 +477,13 @@ th {
     padding: 0;
   }
   
-  .homelist li {
-    background-color: #fff;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-  }
+.homelist li {
+background-color: #fff;
+margin: 10px 0;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s ease;
+}
   
   .homelist li:hover {
     transform: scale(1.02);

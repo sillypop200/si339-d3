@@ -109,8 +109,7 @@ def csv_to_html(csv_filename, output_folder):
                 html_content += f"""
 <div class="athlete" id="{athlete_id}">
 <figure> 
-    <img src="../images/profiles/{profile_pic}" width="200" alt="Profile picture of {name}"
-    onerror="this.onerror=null;this.src='../images/default_image.jpg';"> 
+    <img src="../images/profiles/{profile_pic}" width="200" alt="Profile picture of {name}"> 
     <figcaption>{name}</figcaption>
 </figure>
 <dl>
@@ -150,6 +149,7 @@ def csv_to_html(csv_filename, output_folder):
                      <a href="https://sites.google.com/aaps.k12.mi.us/skylinecrosscountry2021/home">XC Skyline Page</a><br>
                     Follow us on Instagram <a href="https://www.instagram.com/a2skylinexc/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a> 
                      </footer>
+                     <script src="../js/imagePlaceholder.js"></script>
         </body>
 </html>
 """

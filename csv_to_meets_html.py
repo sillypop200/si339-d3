@@ -91,8 +91,8 @@ def csv_to_html(csv_filename, output_folder):
                     table_start = False
                     html_content += "</table>\n"
                     html_content += """</section>\n
-                    <section id="individual-results">\n
-                    <h2>Individual Results</h2>"""
+                    <h2>Individual Results</h2><br>\n
+                    <section id="individual-results">\n"""
 
                 place = row[0].replace('.', ' ')  # Remove dot from the place number
                 grade = row[1]
@@ -110,7 +110,7 @@ def csv_to_html(csv_filename, output_folder):
                 html_content += f"""
 <div class="athlete" id="{athlete_id}">
 <figure> 
-    <a href = "../images/profiles/{profile_pic}" target= "_blank" data-lightbox = "Athletes" data-title="{name}">
+    <a href = "../images/profiles/{profile_pic}" target= "_blank" data-lightbox = "Athletes" data-title="{name}" data-alt = "Profile picture of {name}">
     <img src="../images/profiles/{profile_pic}" width="200" alt="Profile picture of {name}"> </a>
     <figcaption>{name}</figcaption>
 </figure>
@@ -132,8 +132,8 @@ def csv_to_html(csv_filename, output_folder):
         html_content = html_content.replace("{summary_text}", summary_text)
 
         html_content += """</section>\n
+        <h2>Gallery</h2><br>
         <section id="gallery">
-        <h2>Gallery</h2>
         """
 
         html_content += create_meet_image_gallery(link_url)
@@ -209,7 +209,7 @@ def generate_image_tags(image_files, folder_path):
     img_tags = []
     for img in image_files:
         img_path = os.path.join(folder_path, img)
-        img_tags.append(f'<a href = "../{img_path}" target = "_blank" data-lightbox = "Gallery"> <img src="../{img_path}" width = "200" alt=""></a>')
+        img_tags.append(f'<a href = "../{img_path}" target = "_blank" data-lightbox = "Gallery" data-alt ="gallery image"> <img src="../{img_path}" width = "200" alt="gallery image"></a>')
     return "\n".join(img_tags)
 
 # Putting it all together

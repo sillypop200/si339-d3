@@ -153,6 +153,11 @@ def csv_to_html(csv_filename, output_folder):
                      </footer>
                      <script src="../js/imagePlaceholder.js"></script>
                      <script src ="../dist/js/lightbox-plus-jquery.js"></script>
+                     <script>
+                        lightbox.option({
+                        'disableScrolling':true; 
+                        })
+                    </script>
         </body>
 </html>
 """

@@ -21,8 +21,8 @@ a:hover{
     from {width:0} to {width:100%}
 }
 img{
-    width: 250px;
-    height: 250px; 
+    width: 225px;
+    height: 225px; 
     border-radius: 50%; 
     object-fit: cover; 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
@@ -510,46 +510,46 @@ transition: transform 0.2s ease;
 
 @media (min-width: 600px) {
     #gallery {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 900px) {
     #gallery {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
 @media (min-width: 1200px) {
     #gallery {
-        grid-template-columns: repeat(4, 1fr); /* 4 columns on extra-large screens */
+        grid-template-columns: repeat(4, 1fr); 
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
     nav {
-        flex-direction: row; /* Arrange links horizontally */
-        justify-content: center; /* Center the items */
+        flex-direction: row; 
+        justify-content: center; 
         align-items: center;
-        gap: 20px; /* Optional: add some space between items */
+        gap: 20px; 
     }
 
     nav a {
-        padding: 10px 20px; /* Adjust padding for horizontal layout */
+        padding: 15px 20px; /* Adjust padding for horizontal layout */
     }
 }
 
 .athlete {
-    width: 100%; /* Full width on small screens */
+    width: 100%; 
 }
 
 @media (min-width: 500px) {
     #individual-results {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
         gap: 20px;
     }
     .athlete {
-        width: auto; /* Reset width for grid */
+        width: auto; 
     }
 }

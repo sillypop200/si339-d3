@@ -156,6 +156,7 @@ def csv_to_html(csv_filename, output_folder):
                      <script>
                         lightbox.option({
                         'disableScrolling':true,
+                        'wrapAround':true
                         })
                     </script>
         </body>

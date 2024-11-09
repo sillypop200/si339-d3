@@ -315,14 +315,6 @@ th {
         background-color: #1e1e1e;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
       }
-    
-      .homelist a {
-        color: #bb86fc;
-      }
-    
-      .homelist a:hover {
-        color: #9b66e8;
-      }
     /* General Text and Background */
     body {
         background-color: #121212;
@@ -416,10 +408,10 @@ th {
         color: #ff7043;
     }
 
-    /* Header Background Image */
     header::before {
-        background-image: url('../forestSI_dark.jpg'); /* Optional dark-mode background image */
+        background-image: url('../forestSI.jpg'); /* Use the same image URL */
         opacity: 0.5;
+        filter: grayscale(100%); /* Apply black-and-white filter */
     }
 
     /* Summary Section */
@@ -435,6 +427,16 @@ th {
     }
     body a {
         color:white;
+    }
+    .homelist a{
+        background-color: #444;
+        color: #ffffff!important;
+    }
+    .homelist a:hover{
+        color: #ff7043!important;
+    }
+    #skip{
+        color:white!important;
     }
 }
 
